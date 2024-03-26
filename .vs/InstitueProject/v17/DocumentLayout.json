@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7866A1BB-9E8F-4C8C-ACE9-1AFA4FD8E422}|InstitueProject.csproj|d:\\software_courses\\my_iti_44\\26-asp.net core (mvc)\\our mvc\\day2 project\\institueproject\\iti_mvc_project\\views\\course\\all.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7866A1BB-9E8F-4C8C-ACE9-1AFA4FD8E422}|InstitueProject.csproj|solutionrelative:views\\course\\all.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "All.cshtml",
+              "DocumentMoniker": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\Views\\Course\\All.cshtml",
+              "RelativeDocumentMoniker": "Views\\Course\\All.cshtml",
+              "ToolTip": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\Views\\Course\\All.cshtml",
+              "RelativeToolTip": "Views\\Course\\All.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-26T23:21:01.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\InstitueProject.csproj": {}
+    "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\InstitueProject.csproj": {}
   },
   "projects": {
-    "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\InstitueProject.csproj": {
+    "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\InstitueProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\InstitueProject.csproj",
+        "projectUniqueName": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\InstitueProject.csproj",
         "projectName": "InstitueProject",
-        "projectPath": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\InstitueProject.csproj",
+        "projectPath": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\InstitueProject.csproj",
         "packagesPath": "C:\\Users\\oahme\\.nuget\\packages\\",
-        "outputPath": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\obj\\",
+        "outputPath": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\oahme\\AppData\\Roaming\\NuGet\\NuGet.Config",

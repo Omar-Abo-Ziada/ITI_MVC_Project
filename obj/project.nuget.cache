@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wdcqfxNUHyKXyWTkfjiDciUWwl+EQmniO1DTrVadAsUIpAuNvaTd1NpJiK4JX9OUJcNS6C23+pYu7SoFtI3yCA==",
+  "dgSpecHash": "k7UqQsvf9lOcBZREmA66Ed3pbaquiMslgb3u6eSL89iiNzEgB3Tv7a23tLD7Q4nPg7DLxB7XvCpIaDVJ6DoCcA==",
   "success": true,
-  "projectFilePath": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\InstitueProject.csproj",
+  "projectFilePath": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\InstitueProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\oahme\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\oahme\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
