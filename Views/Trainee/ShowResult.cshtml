@@ -1,0 +1,90 @@
+﻿@model TraineeName_CourseName_Degree_IsPassed
+
+@{
+    ViewData["Title"] = "ShowResult";
+}
+
+@section Style {
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 70%;
+            margin: auto;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .result-container {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .result-details {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .result-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+            .result-table th, .result-table td {
+                padding: 15px;
+                border-bottom: 1px solid #ddd;
+            }
+
+        .table-primary {
+            padding: 15px;
+            font-weight: bold;
+        }
+
+        .result-passed {
+            font-weight: bold;
+        }
+
+        .result-failed {
+            font-weight: bold;
+        }
+    </style>
+}
+
+<main class="container">
+    <h1>Show Result</h1>
+    <div class="result-container">
+        <div class="result-details">
+            <table class="result-table">
+                <tr>
+                    <th class="table-primary">Name</th>
+                    <td>@Model.TraineeName</td>
+                </tr>
+                <tr>
+                    <th class="table-primary">Course</th>
+                    <td>@Model.CourseName</td>
+                </tr>
+                <tr>
+                    <th class="table-primary">Degree</th>
+                    <td>@Model.Degree / @Model.MaxDegree</td>
+                </tr>
+                <tr>
+                    <th class="table-primary">Result</th>
+                    <td class="@((Model.IsPassed) ? "result-passed" : "result-failed")">
+                        @((Model.IsPassed) ? "Passed" : "Failed")
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</main>

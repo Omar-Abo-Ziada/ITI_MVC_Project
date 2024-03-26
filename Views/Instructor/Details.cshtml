@@ -1,0 +1,109 @@
+﻿@model Instructor
+@{
+    ViewData["Title"] = "Details";
+}
+
+@* <h1 class="text-center">Instructor Details</h1> *@
+
+@section Style {
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .details {
+            width: 80%;
+            margin: 50px auto 100px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two columns */
+            grid-gap: 20px; /* Gap between elements */
+        }
+
+        .details {
+            padding-right: 20px; /* Adjust spacing */
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 20px; /* Add margin to separate from the list */
+        }
+
+        .btn {
+            padding: 10px 40px; /* Increase padding to make the button wider */
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            display: inline-block; /* Ensure button width is determined by padding */
+            text-align: center; /* Center the text inside the button */
+            line-height: 1; /* Ensure proper button height */
+            border: none; /* Remove border */
+        }
+
+            .btn:hover {
+                background-color: #0056b3;
+            }
+    </style>
+
+}
+<main class="container" id="main">
+    <div class="container">
+        <div class="grid-container">
+            <div class="details">
+                <h1>Details</h1>
+                <ul>
+                    <li><strong>ID:</strong> @Model.Id</li>
+                    <li><strong>Name:</strong> @Model.Name</li>
+                    <li><strong>Course:</strong> @Model.Course.Name</li>
+                    <li><strong>Department:</strong> @Model.Department.Name</li>
+                    <li><strong>Address:</strong> @Model.Adress</li>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <li><strong>Salary:</strong> @Model.Salary</li>
+                    }
+                </ul>
+                <div class="text-center mb-4 my-5">
+                    <a href="/Instructor/All#main" class="btn btn-success">Back To Instructors</a>
+                </div>
+            </div>
+            <div class="image" style="margin-top:20px">
+                <img src="/images/@Model.ImageUrl" alt="Instructor Image" style="max-width: 100%;" />
+            </div>
+        </div>
+    </div>
+</main>
+
+

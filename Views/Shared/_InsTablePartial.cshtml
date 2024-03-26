@@ -1,0 +1,51 @@
+﻿@model List<Instructor>
+
+<div class="table-responsive my-5">
+    <table class="table table-bordered table-hover text-center">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Course</th>
+                <th scope="col">Department</th>
+                <th scope="col">Image</th>
+                <th scope="col">Details</th>
+                @if (User.IsInRole("Admin"))
+                {
+                    <th scope="col">Edit</th>
+                    <th scope="col">Delete</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Instructor instructor in Model)
+            {
+                <tr>
+                    <td>@instructor.Id</td>
+                    <td>@instructor.Name</td>
+                    <td>@instructor.Course.Name</td>
+                    <td>@instructor.Department.Name</td>
+                    <td><img src="/images/@instructor.ImageUrl" alt="Instructor Image" class="rounded-circle" style="width: 100px; height: 100px;" /></td>
+                    <td>
+                        <div class="col">
+                            <a href="/Instructor/Details?id=@instructor.Id#main" class="btn btn-info btn-sm">Details</a>
+                        </div>
+                    </td>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <td>
+                            <div class="col">
+                                <a href="/Instructor/Edit?id=@instructor.Id#main" class="btn btn-primary btn-sm">Edit</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="col">
+                                <a href="/Instructor/Delete?id=@instructor.Id#main" class="btn btn-danger btn-sm">Delete</a>
+                            </div>
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,162 @@
+﻿@model List<Course>
+
+@{
+    ViewData["Title"] = "All";
+}
+
+@section Style
+{
+    <style>
+        .table-responsive {
+            overflow-x: auto;
+        }
+
+        .table {
+            width: 100%;
+            margin-bottom: 1rem;
+            background-color: #fff;
+        }
+
+            .table th,
+            .table td {
+                padding: 0.75rem;
+                vertical-align: middle;
+            }
+
+        .table-bordered {
+            border: 1px solid #dee2e6;
+        }
+        
+        .table-hover tbody tr:hover {
+            background-color: rgba(0, 0, 0, 0.075);
+        }
+
+        .thead-light th {
+            color: #495057;
+            background-color: #e9ecef;
+            border-color: #dee2e6;
+        }
+
+        .btn {
+            padding: .5rem .5rem;
+            font-size: 0.875rem;
+            line-height: 1.5;
+            border-radius: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .pagination {
+            margin-top: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 1rem;
+        }
+
+        .input-group-append {
+            cursor: pointer;
+        }
+
+        .row{
+            margin-bottom:20px;
+        }
+
+    </style>
+}
+
+<main class="container text-center" id="main">
+
+    <div class="section-header text-center">
+        <h2>Explore Courses</h2>
+        <p class="lead">Explore Courses offers a diverse array of learning opportunities tailored to individual interests and goals.</p>
+    </div>
+    <div class="text-center d-flex row mb-4">
+        <div class="col-md-9 justify-content-around">
+            <form asp-action="Search" asp-controller="Course" asp-fragment="main" method="post" class="d-inline">
+                <div class="col-md-6">
+                    <input id="searchCrsName" name="searchCrsName" type="search" class="form-control" style="width:100%" placeholder="Search Course Name">
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-primary" style="width:80%" >Search</button>
+                </div>
+                <div class="col-md-2">
+                    <a href="/course/all#main" class="btn btn-info">Clear search</a>
+                </div>
+            </form>
+        </div>
+        @if (User.IsInRole("Admin"))
+        {
+            <div class="col-md-2">
+                <a asp-action="New" asp-controller="Course" style="width:90%" asp-fragment="main" class="btn btn-success mx-1">Add New Course</a>
+            </div>
+        }
+    </div>
+
+    @* ===================================================== *@
+    <div id="CrsTableContainer">
+        <partial name="_CrsTablePartial"></partial>
+    </div>
+    @* ===================================================== *@
+
+
+    <div class="pagination justify-content-center">
+        <nav aria-label="Pagination">
+            <ul class="pagination">
+                @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                {
+                    <li class="page-item"><a class="page-link" asp-action="All" asp-fragment="main" asp-controller="Course" data-page="@i" asp-route-page="@i">@i</a></li>
+                }
+            </ul>
+        </nav>
+    </div>
+</main>
+
+@section Script
+{
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script>
+        // autocomplete
+        $(function () {
+
+            var crsNames = @Json.Serialize(@ViewBag.AllCoursesNames);
+
+            $("#searchCrsName").autocomplete({
+                source: crsNames,
+                minLength: 1
+            });
+        });
+
+        //-----------------------
+        // pagination using ajax returning partial view 
+
+        $(document).ready(function ()
+        {
+            $(".pagination a").click(function (e) 
+            {
+                e.preventDefault();
+
+                var pageNum = $(this).data("page");
+
+                loadCourses(pageNum);
+            });
+
+            function loadCourses(pageNum) 
+            {
+                // $.get($`Course/AllPartial${pageNum}`)
+                $.get("/Course/AllPartial", { page: pageNum })
+
+                    .done(function (response) 
+                    {
+                        $("#CrsTableContainer").html(response);
+                    });
+
+
+            }
+        });
+
+    </script>
+}
+

@@ -1,0 +1,183 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = InstitueProject
+build_property.RootNamespace = InstitueProject
+build_property.ProjectDir = D:\Software_Courses\My_ITI_44\26-ASP.Net Core (MVC)\our MVC\Day2 Project\InstitueProject\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Software_Courses\My_ITI_44\26-ASP.Net Core (MVC)\our MVC\Day2 Project\InstitueProject
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Account/RegisterAsAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RlckFzQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Course/All.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXEFsbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Course/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Course/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Course/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Course/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXE5ldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Course/SaveDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXFNhdmVEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Course/ShowCourseResults.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXFNob3dDb3Vyc2VSZXN1bHRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Instructor/All.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxBbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Instructor/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Instructor/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Instructor/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Instructor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Instructor/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxOZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Role/AddRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxBZGRSb2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Shared/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Shared/_CrsTablePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DcnNUYWJsZVBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Shared/_FooterPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Shared/_HomeLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ib21lTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Shared/_InsTablePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9JbnNUYWJsZVBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Shared/_NavPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Shared/_SectionsLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TZWN0aW9uc0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Shared/_TraineeTablePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UcmFpbmVlVGFibGVQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Trainee/All.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lZVxBbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Trainee/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Trainee/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Trainee/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Trainee/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lZVxOZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Trainee/ShowResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lZVxTaG93UmVzdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Trainee/ShowTraineeResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lZVxTaG93VHJhaW5lZVJlc3VsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Software_Courses/My_ITI_44/26-ASP.Net Core (MVC)/our MVC/Day2 Project/InstitueProject/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-u0vum5gtv4

@@ -1,0 +1,109 @@
+﻿@model Ins_With_Departments_Courses_IDs_Names
+
+@{
+    ViewData["Title"] = "New";
+}
+@section Style {
+    <style>
+        .btn {
+            margin: 20px;
+        }
+
+        label {
+            margin-top: 20px;
+        }
+    </style>
+}
+<main class="container" id="main">
+    <h1 class="text-center">New Instructor</h1>
+
+    <form method="post" action="/Instructor/SaveNew#main">
+        <div>
+            <label>Name</label>
+            <input type="text" name="Name" class="form-check form-control" value="@Model.Name" />
+        </div>
+        <div>
+            <label>Address</label>
+            <input type="text" name="Adress" class="form-check form-control" value="@Model.Adress" />
+        </div>
+        <div>
+            <label>Salary</label>
+            <input type="text" name="Salary" class="form-check form-control" value="@Model.Salary" />
+        </div>
+        <div>
+            <label>Image URL</label>
+            <input type="text" name="ImageUrl" class="form-check form-control" value="@Model.ImageUrl" />
+        </div>
+        <div>
+            <label>Department</label>
+            <select name="DepartmentId" onchange="GetCoursesByDepId()" id="DepartmentId" class="form-check form-control">
+                @foreach (Department dep in Model.Departments)
+                {
+                    if (Model.DepartmentId == dep.Id)
+                    {
+                        <option value="@dep.Id" selected>@dep.Name</option>
+                    }
+                    else
+                    {
+                        <option value="@dep.Id">@dep.Name</option>
+                    }
+                }
+            </select>
+        </div>
+        <div>
+            <label>Course</label>
+            <select name="CourseId" id="CourseId" class="form-check form-control">
+                @foreach (Course crs in Model.Courses)
+                {
+                    if (Model.CourseId == crs.Id)
+                    {
+                        <option value="@crs.Id" selected>@crs.Name</option>
+                    }
+                    else
+                    {
+                        <option value="@crs.Id">@crs.Name</option>
+                    }
+                }
+            </select>
+        </div>
+
+        <input asp-for="Id" hidden />
+
+        <input type="submit" class="btn btn-success " />
+        <a href="All#main" class="btn btn-info ">Cancel</a>
+    </form>
+</main>
+
+
+@section Script
+{
+    @* <script src="~/lib/jquery/dist/jquery.min.js"></script> *@ @* I called it in the layout *@
+    <script>
+        function GetCoursesByDepId() {
+
+            $("#CourseId").html("");
+
+            var deptID = $("#DepartmentId").val();
+
+            console.log(deptID);
+
+            //ajax call json /Department/GetEmpByDEptID?deptID=1
+            $.ajax({
+                // url: "/Course/GetCoursesByDeptId?deptid=" + deptID,
+                url: `/Course/GetCoursesByDeptId?deptid=${deptID}`,
+                success: function (result) {
+                    console.log(result);
+                    for (let item of result) {
+                        console.log(item);
+                        // $("#CourseId").append(`<option value=${item.id}>  ${item.name} </option>`);
+                        $("#CourseId").append(`<option value="${item.id}" selected>${item.name}</option>`);
+                    }
+                }
+            });
+        }
+
+        $(document).ready(GetCoursesByDepId);
+
+    </script>
+}
+

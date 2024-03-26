@@ -1,0 +1,75 @@
+﻿@model IEnumerable<InstitueProject.Models.Trainee>
+
+<style>
+    .table td,
+    .table th {
+        vertical-align: middle !important;
+        text-align: center;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<div class="container my-5">
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Image</th>
+                    <th>Address</th>
+                    <th>Grade</th>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <th>Edit</th>
+                    }
+                    <th>Details</th>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <th>Delete</th>
+                        <th>Result</th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Trainee trainee in Model)
+                {
+                    <tr>
+                        <td>@trainee.Id</td>
+                        <td>@trainee.Name</td>
+                        <td>
+                            <div class="image-container">
+                                <img src="~/images/@trainee.ImageUrl" alt="Trainee Image" class="rounded-circle" style="width: 100px; height: 100px;" />
+                            </div>
+                        </td>
+                        <td>@trainee.Adress</td>
+                        <td>@trainee.Grade</td>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <td>
+                                <a asp-action="Edit" asp-controller="Trainee" asp-fragment="main" asp-route-id="@trainee.Id" class="btn btn-primary">Edit</a>
+                            </td>
+                        }
+                        <td>
+                            <a asp-action="Details" asp-controller="Trainee" asp-fragment="main" asp-route-id="@trainee.Id" class="btn btn-info">Details</a>
+                        </td>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <td>
+                                <a asp-action="Delete" asp-controller="Trainee" asp-fragment="main" asp-route-id="@trainee.Id" class="btn btn-danger">Delete</a>
+                            </td>
+                            <td>
+                                <a asp-action="ShowTraineeResult" asp-controller="Trainee" asp-fragment="main" asp-route-id="@trainee.Id" class="btn btn-warning">Show Result</a>
+                            </td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

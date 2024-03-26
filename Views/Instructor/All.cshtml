@@ -1,0 +1,170 @@
+﻿@model List<Instructor>
+@{
+    ViewData["Title"] = "All";
+
+    // Layout = "_SectionsLayout";
+}
+@* <div class="container my-5" >
+    <partial name="_NavPartial" />
+</div> *@
+
+@section Style
+{
+
+    <style>
+        .table-responsive {
+            overflow-x: auto;
+            width: 100%;
+        }
+
+        .table {
+            width: 100%;
+            margin-bottom: 1rem;
+            background-color: #fff;
+        }
+
+            .table th,
+            .table td {
+                padding: 0.75rem;
+                vertical-align: middle;
+            }
+
+        .table-bordered {
+            border: 1px solid #dee2e6;
+        }
+
+        .table-hover tbody tr:hover {
+            background-color: rgba(0, 0, 0, 0.075);
+        }
+
+        .thead-light th {
+            color: #495057;
+            background-color: #e9ecef;
+            border-color: #dee2e6;
+        }
+
+        .pagination {
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 10px;
+        }
+
+        /* Added margin to buttons */
+        .btn {
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+    </style>
+}
+<main class="container text-center" id="main">
+    <h1 class="text-center mb-4 ">All Instructors</h1>
+
+    <p class="container text-center ">
+        Our instructors are highly knowledgeable <br /> and dedicated to facilitating an enriching learning experience for all students.
+    </p>
+
+    <div class="container text-center">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-8">
+                <form action="/Instructor/Search" method="post" class="d-inline">
+                    <div class="input-group">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-md-8">
+                                <input id="searchInsName" name="searchInsName" type="search" value="" class="form-control mr-2 custom-search-input" style="width:100%" placeholder="Search Instructor Name" />
+                            </div>
+                            <div class="col-md-2">
+                                <button type="submit" class="btn btn-primary">Search</button>
+                            </div>
+                            <div class="col-md-2">
+                                <a href="/instructor/all#main" class="btn btn-info" style="margin-left:5px">Clear Search</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            @if (User.IsInRole("Admin"))
+            {
+                <div class="col-md-4">
+                    <a href="/Instructor/New#main" class="btn btn-success mx-2 my-2" style="width:60%">Add New Instructor</a>
+                </div>
+            }
+        </div>
+    </div>
+
+    @* ============================================================== *@
+    <div id="courseListContainer">
+        <partial name="_InsTablePartial"></partial>
+    </div>
+    @* ============================================================== *@
+
+    <div class="pagination justify-content-center">
+        <nav aria-label="Pagination">
+            <ul class="pagination">
+                @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                {
+                    <li class="page-item"><a class="page-link" href="#" data-page="@i">@i</a></li>
+                }
+            </ul>
+        </nav>
+    </div>
+
+</main>
+
+@section Script
+{
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <script>
+
+        // autocomplete func
+        $(function () {
+            var AllInstructorNames = @Json.Serialize(@ViewBag.AllInstructorNames) ;
+
+            $("#searchInsName").autocomplete({
+                source: AllInstructorNames,
+                minLength: 1
+            });
+        });
+
+        //===================================
+
+        // pagination funcs
+        $(function () {
+
+            $(".pagination a").click(function (e) {
+
+                e.preventDefault();
+
+                var page = $(this).data("page");
+
+                loadInstructors(page);
+            });
+
+            function loadInstructors(page) {
+                $.get("/Instructor/AllPartial", { page: page })
+
+                    .done(function (result) {
+
+                        $("#courseListContainer").html(result);
+                    })
+
+                    // .fail(function () {
+
+                    //     console.error("Failed to load courses.");
+
+                    // });
+            }
+
+        });
+
+    </script>
+}

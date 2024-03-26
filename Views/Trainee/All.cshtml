@@ -1,0 +1,99 @@
+﻿@model IEnumerable<InstitueProject.Models.Trainee>
+
+@{
+    ViewData["Title"] = "All";
+}
+
+<main id="main" class="container">
+
+    <h2 class="text-center mb-4">All Trainees</h2>
+
+    <p class="container text-center ">
+        Our Trainees are highly Motivated <br /> and dedicated to facilitating an enriching learning experience .
+    </p>
+
+    <div class="container text-center" style="margin-bottom:20px">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-8">
+                <form action="/Trainee/Search" method="post" class="d-inline">
+                    <div class="input-group">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-md-8">
+                                <input id="searchTraineeName" name="searchTraineeName" type="search" value="" class="form-control mr-2 custom-search-input" style="width:100%" placeholder="Search Trainee Name" />
+                            </div>
+                            <div class="col-md-2">
+                                <button type="submit" class="btn btn-primary">Search</button>
+                            </div>
+                            <div class="col-md-2">
+                                <a asp-action="All" asp-controller="Trainee" asp-fragment="main" class="btn btn-info">Clear Search</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            @if (User.IsInRole("Admin"))
+            {
+                <div class="col-md-4">
+                    <a href="/Trainee/New#main" class="btn btn-success mx-2 my-2" style="width:60%">Add New Trainee</a>
+                </div>
+            }
+        </div>
+    </div>
+
+
+    @* ******************************************************************************** *@
+    <div id="traineeListContainer" class="mt-4">
+        <partial name="_TraineeTablePartial"></partial>
+    </div>
+    @* ******************************************************************************** *@
+
+
+    <div class="pagination-container mt-4 text-center">
+        <nav aria-label="Pagination">
+            <ul class="pagination justify-content-center">
+                @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                {
+                    <li class="page-item"><a class="page-link" href="#" data-page="@i">@i</a></li>
+                }
+            </ul>
+        </nav>
+    </div>
+</main>
+
+@section Script {
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <script>
+
+        // auto complete
+        $(function () {
+            var AllTraineesNames = @Json.Serialize(@ViewBag.AllTraineesNames);
+
+            $("#searchTraineeName").autocomplete({
+                source: AllTraineesNames,
+                minLength: 1
+            });
+        });
+
+        // pagination
+        $(function () {
+            $(".pagination a").click(function (e) {
+                e.preventDefault();
+                var page = $(this).data("page");
+                loadTrainees(page);
+            });
+
+            function loadTrainees(page) {
+                $.get("/Trainee/AllPartial", { page: page })
+                    .done(function (result) {
+                        $("#traineeListContainer").html(result);
+                    })
+                    .fail(function () {
+                        console.error("Failed to load trainees.");
+                    });
+            }
+        });
+    </script>
+}

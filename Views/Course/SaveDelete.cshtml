@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "SaveDelete";
+}
+
+@section Style {
+
+    <style>
+        .alert-danger {
+            color: #721c24;
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+            border-radius: 0.25rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+            
+        .shadow {
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+    </style>
+}
+<main class="container" id="main">
+    <h1>OOPS</h1>
+
+    <div class="alert alert-danger shadow">
+        <p> You Can't Delete this course bcause there are @ViewData["InsCount"] instructors assigned in it ! </p>
+        <p> You have to assign the instructors into another course first . </p>
+    </div>
+
+    <div class="text-center">
+        <a asp-action="All" asp-controller="Course" asp-fragment="main" class="btn btn-primary mx-2 my-2" style="width:30% ; padding:1%">OK</a>
+    </div>
+
+</main>
+

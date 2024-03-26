@@ -1,0 +1,53 @@
+﻿@model InstitueProject.ViewModels.RegisterUserViewModel
+
+@{
+    ViewData["Title"] = "RegisterAsAdmin";
+}
+<main id="main" class="container"> 
+
+    <h2>RegisterAsAdmin</h2>
+
+    <h4>RegisterUserViewModel</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="RegisterAsAdmin" asp-fragment="main" method="post">
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="UserName" class="control-label"></label>
+                    <input asp-for="UserName" class="form-control" />
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Adress" class="control-label"></label>
+                    <input asp-for="Adress" class="form-control" />
+                    <span asp-validation-for="Adress" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PassWord" class="control-label"></label>
+                    <input asp-for="PassWord" class="form-control" />
+                    <span asp-validation-for="PassWord" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ConfirmPassWord" class="control-label"></label>
+                    <input asp-for="ConfirmPassWord" class="form-control" />
+                    <span asp-validation-for="ConfirmPassWord" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-default" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+    @section Script {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+
+</main>

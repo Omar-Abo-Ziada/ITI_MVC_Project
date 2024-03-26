@@ -1,0 +1,83 @@
+﻿@model CourseViewModel
+@{
+    ViewData["Title"] = "New";
+
+    SelectList selectListDeps = new SelectList(Model.Departments, "Id", "Name");
+}
+
+@section Style{
+    <style>
+        .labels label {
+            margin-top: 20px;
+        }
+    </style>
+}
+
+<main class="container" id="main" >
+
+    <h1 class="text-center">New Course</h1>
+
+    <form method="post" asp-action="SaveNew" asp-controller="Course" asp-fragment="main">
+         <div asp-validation-summary="All" class="text-danger"></div> 
+
+        <div class="labels">
+            <div>
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-check form-control" value="@Model.Name" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div>
+                <label asp-for="Hours"></label>
+                <input asp-for=Hours class="form-check form-control" value="@Model.Hours" />
+                <span asp-validation-for="Hours" class="text-danger"></span>
+            </div>
+            <div>
+                <label asp-for="Degree"></label>
+                <input asp-for="Degree" class="form-check form-control" value="@Model.Degree" />
+                <span asp-validation-for="Degree" class="text-danger"></span>
+            </div>
+            <div>
+                <label asp-for="MinDegree"></label>
+                <input asp-for="MinDegree" class="form-check form-control" value="@Model.MinDegree" />
+                <span asp-validation-for="MinDegree" class="text-danger"></span>
+            </div>
+
+            <div>
+                <label asp-for="DepartmentId"></label>
+                <select asp-for="DepartmentId" class="form-check form-control" asp-items="@selectListDeps"></select>
+                <span asp-validation-for="DepartmentId" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div style="margin-bottom:10px">
+            <label>Instructors</label>
+            <div>
+                @foreach (Instructor ins in Model.Instructors)
+                {
+                    <div class="form-check">
+                        @if (Model.SelectedInstructorIds.Contains(ins.Id))
+                        {
+                            <input type="checkbox" id="@ins.Id" name="SelectedInstructorIds"
+                                   value="@ins.Id" class="form-check-input" checked />
+                        }
+                        else
+                        {
+                            <input type="checkbox" id="@ins.Id" name="SelectedInstructorIds"
+                                   value="@ins.Id" class="form-check-input" />
+                        }
+                        <label class="form-check-label" for="@ins.Id">@ins.Name</label>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <input asp-for="Id" hidden />
+
+        <input type="submit" class="btn btn-success" />
+
+        <a asp-action="All" class="btn btn-info" asp-fragment="main">Cancel</a>
+    </form>
+</main>
+
+<partial name="_ValidationScriptsPartial" />
+

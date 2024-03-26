@@ -1,0 +1,44 @@
+﻿@model List<Course>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-hover text-center">
+        <thead class="thead-light">
+            <tr>
+                <th class="text-center" scope="col">Id</th>
+                <th class="text-center" scope="col">Name</th>
+                <th class="text-center" scope="col">Hours</th>
+                <th class="text-center" scope="col">Degree</th>
+                <th class="text-center" scope="col">Min Degree</th>
+                <th scope="col">Department</th>
+                <th scope="col">Details</th>
+                @if (User.IsInRole("Admin"))
+                {
+                    <th scope="col">Edit</th>
+                    <th scope="col">Delete</th>
+                    <th scope="col">Result</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Course crs in Model)
+            {
+                <tr>
+                    <td>@crs.Id</td>
+                    <td>@crs.Name</td>
+                    <td>@crs.Hours</td>
+                    <td>@crs.Degree</td>
+                    <td>@crs.MinDegree</td>
+                    <td>@crs.Department.Name</td>
+                    <td><a asp-action="Details" asp-controller="Course" asp-route-id="@crs.Id" asp-fragment="main" class="btn btn-info btn-sm">Details</a></td>
+
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <td><a asp-action="Edit" asp-controller="Course" asp-route-id="@crs.Id" asp-fragment="main" class="btn btn-primary btn-sm">Edit</a></td>
+                        <td><a asp-action="Delete" asp-controller="Course" asp-route-id="@crs.Id" asp-fragment="main" class="btn btn-danger btn-sm">Delete</a></td>
+                        <td><a asp-action="ShowCourseResults" asp-controller="Course" asp-route-id="@crs.Id" asp-fragment="main" class="btn btn-warning btn-sm">Result</a></td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

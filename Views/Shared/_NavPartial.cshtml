@@ -1,0 +1,92 @@
+﻿<!-- Header -->
+<header id="header" class="transparent-nav">
+    <div class="container">
+
+        <div class="navbar-header">
+            <!-- Logo -->
+            <div class="navbar-brand">
+                <a class="logo" href="index.html">
+                    <img class="iti-logo" src="/images/ITILogo.png" alt="logo">
+                </a>
+            </div>
+            <!-- /Logo -->
+            <!-- Mobile toggle -->
+            <button class="navbar-toggle">
+                <span></span>
+            </button>
+            <!-- /Mobile toggle -->
+        </div>
+
+        <!-- Navigation -->
+        <nav id="nav">
+            <ul class="main-menu nav navbar-nav navbar-right">
+                <li><a href="/Home/Index">Home</a></li>
+
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li><a href="/Trainee/All#main">Trainees</a></li>
+                    <li><a href="/Instructor/All#main">Instructors</a></li>
+                    <li><a href="/Course/All#main">Courses</a></li>
+@*                     <li><a href="/account/logout#main">Log out</a></li>
+ *@
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <li><a href="/role/addrole#main">Add New Role</a></li>
+                        <li><a href="/account/registerasadmin#main">Register a new Admin</a></li>
+                    }
+                }
+                else
+                {
+                    <li><a href="/account/register#main">Register</a></li>
+                    <li><a href="/account/login#main">Log in</a></li>
+                }
+
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: #333; background-color:#f8f9fa">
+                            <!-- Set initial color -->
+                            Welcome, @User.Identity.Name <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" style="background-color: #f8f9fa; border: none;">
+                            <li><a href="#" style="color: #007bff;">Profile</a></li> <!-- Blue color for links -->
+                            <li><a href="#" style="color: #007bff;">Settings</a></li> <!-- Blue color for links -->
+                            <li><a href="/account/logout#main" style="color: #007bff;">Logout</a></li> <!-- Blue color for links -->
+                        </ul>
+                    </li>
+                }
+
+                <!-- <li><a href="#">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li> -->
+
+            </ul>
+        </nav>
+        <!-- /Navigation -->
+
+    </div>
+</header>
+
+<!-- Home -->
+<div id="home" class="hero-area">
+
+    <!-- Backgound Image -->
+    <div class="bg-image bg-parallax overlay" style="background-image:url(/images/home-background.jpg)"></div>
+    <!-- /Backgound Image -->
+
+    <div class="home-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="white-text">ITI Free Training Courses</h1>
+                    <p class="lead white-text">
+                        Supporting Egyptian youth to improve their career opportunities by developing their skills and preparing them for highly in-demand jobs, and related vast technologies to fulfill today’s needs, and tomorrow’s forecast.
+                    </p>
+                    <a class="main-button icon-button" href="#">Get Started!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /Header -->

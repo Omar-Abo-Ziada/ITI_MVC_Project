@@ -1,0 +1,87 @@
+﻿@model List<TraineeName_CourseName_Degree_IsPassed>
+
+@{
+    ViewData["Title"] = "ShowTraineeResult";
+}
+
+<style>
+    /* Additional CSS styles for modernization */
+    #main {
+        padding-top: 20px;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    .custom-table {
+        width: 100%;
+        border-collapse: collapse;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+        .custom-table th,
+        .custom-table td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .custom-table th {
+            background-color: #343a40;
+            color: #fff;
+        }
+
+    .result {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+        .result .text-success {
+            color: #28a745;
+        }
+
+        .result .text-danger {
+            color: #dc3545;
+        }
+</style>
+
+
+<main id="main" class="container">
+    <h1 class="text-center mb-4">Trainee Results</h1>
+
+    <div class="table-responsive">
+        <table class="table custom-table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Trainee Name</th>
+                    <th>Course Name</th>
+                    <th>Course Degree</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.TraineeName</td>
+                        <td>@item.CourseName</td>
+                        <td>@item.Degree / @item.MaxDegree</td>
+                        <td class="result @(item.IsPassed ? "passed" : "failed")">@if (item.IsPassed)
+                            {
+                                <span class="text-success">Passed</span>
+                            }
+                            else
+                            {
+                                <span class="text-danger">Failed</span>
+                            }</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <div class="text-center mt-4">
+            <a href="/Trainee/All#main" class="btn btn-primary">Back to Trainees List</a>
+        </div>
+    </div>
+</main>

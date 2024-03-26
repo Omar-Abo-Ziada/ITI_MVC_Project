@@ -1,0 +1,69 @@
+﻿@model InstitueProject.ViewModels.TraineeViewModel
+
+@{
+    ViewData["Title"] = "New";
+}
+
+<main id="main" class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="text-center">New Trainee</h2>
+                </div>
+                <div class="card-body">
+                    <form asp-action="SaveNew" asp-fragment="main" method="post">
+
+                        <div asp-validation-summary="All" class="text-danger"></div>
+
+                        <div class="form-group">
+                            <label asp-for="Name" class="control-label">Name:</label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="ImageUrl" class="control-label">Image URL:</label>
+                            <input asp-for="ImageUrl" class="form-control" />
+                            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Adress" class="control-label">Address:</label>
+                            <input asp-for="Adress" class="form-control" />
+                            <span asp-validation-for="Adress" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Grade" class="control-label">Grade:</label>
+                            <input asp-for="Grade" class="form-control" />
+                            <span asp-validation-for="Grade" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="DepartmentId" class="control-label">Department:</label>
+                            <select asp-for="DepartmentId" class="form-control">
+                                @foreach (Department dep in Model.Departments)
+                                {
+                                    <option value="@dep.Id">@dep.Name</option>
+                                }
+                            </select>
+                            <span asp-validation-for="DepartmentId" class="text-danger"></span>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success">Create</button>
+                            <a asp-action="All" asp-fragment="main" class="btn btn-primary ml-2">Back to List</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+@section Script {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

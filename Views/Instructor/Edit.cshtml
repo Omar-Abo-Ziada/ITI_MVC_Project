@@ -1,0 +1,118 @@
+﻿@model Ins_With_Departments_Courses_IDs_Names
+@{
+    ViewData["Title"] = "Edit";
+}
+
+@section Style{
+ 
+}
+
+<div class="container" id="main">
+    <h1 class="text-center mt-5 mb-4">Edit Instructor</h1>
+
+    <form method="post" action="/Instructor/SaveEdited?id=@Model.Id" class="mb-5">
+        <div class="form-group row my-3">
+            <label for="Name" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+                <input type="text" name="Name" id="Name" class="form-control" value="@Model.Name" />
+            </div>
+        </div>
+
+        <div class="form-group row my-3">
+            <label for="Adress" class="col-sm-2 col-form-label">Address</label>
+            <div class="col-sm-10">
+                <input type="text" name="Adress" id="Adress" class="form-control" value="@Model.Adress" />
+            </div>
+        </div>
+
+        <div class="form-group row my-3">
+            <label for="Salary" class="col-sm-2 col-form-label">Salary</label>
+            <div class="col-sm-10">
+                <input type="number" name="Salary" id="Salary" class="form-control" value="@Model.Salary" />
+            </div>
+        </div>
+
+        <div class="form-group row my-3">
+            <label for="ImageUrl" class="col-sm-2 col-form-label">Image URL</label>
+            <div class="col-sm-10">
+                <input type="text" name="ImageUrl" id="ImageUrl" class="form-control" value="@Model.ImageUrl"  />
+            </div>
+        </div>
+
+        <div class="form-group row my-3">
+            <label for="DepartmentId" class="col-sm-2 col-form-label">Department</label>
+            <div class="col-sm-10">
+                <select name="DepartmentId" id="DepartmentId" onchange="GetCoursesByDepId()" class="form-control">
+                    @foreach (Department dep in Model.Departments)
+                    {
+                        if (dep.Id == Model.DepartmentId)
+                        {
+                            <option value="@dep.Id" selected>@dep.Name</option>
+                        }
+                        else
+                        {
+                            <option value="@dep.Id">@dep.Name</option>
+                        }
+                    }
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group row my-3">
+            <label for="CourseId" class="col-sm-2 col-form-label">Course</label>
+            <div class="col-sm-10">
+                <select name="CourseId" id="CourseId" class="form-control">
+                    @foreach (Course crs in Model.Courses)
+                    {
+                        if (crs.Id == Model.CourseId)
+                        {
+                            <option value="@crs.Id" selected>@crs.Name</option>
+                        }
+                        else
+                        {
+                            <option value="@crs.Id">@crs.Name</option>
+                        }
+                    }
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group row ">
+            <div class="col-sm-10 offset-sm-2">
+                <button type="submit" class="btn btn-success">Save</button>
+                <a href="/Instructor/All#main" class="btn btn-info ml-2">Cancel</a>
+            </div>
+        </div>
+    </form>
+</div>
+@section Script
+{
+    @* <script src="~/lib/jquery/dist/jquery.min.js"></script> *@ @* I called it in the layout *@
+    <script>
+        function GetCoursesByDepId() {
+
+            $("#CourseId").html("");
+
+            var deptID = $("#DepartmentId").val();
+
+            console.log(deptID);
+
+            //ajax call json /Department/GetEmpByDEptID?deptID=1
+            $.ajax({
+                // url: "/Course/GetCoursesByDeptId?deptid=" + deptID,
+                url: `/Course/GetCoursesByDeptId?deptid=${deptID}`,
+                success: function (result) {
+                    console.log(result);
+                    for (let item of result) {
+                        console.log(item);
+                        // $("#CourseId").append(`<option value=${item.id}>  ${item.name} </option>`);
+                        $("#CourseId").append(`<option value="${item.id}" selected>${item.name}</option>`);
+                    }
+                }
+            });
+        }
+
+        $(document).ready(GetCoursesByDepId);
+
+    </script>
+}

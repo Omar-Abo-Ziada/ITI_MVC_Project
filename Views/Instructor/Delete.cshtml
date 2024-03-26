@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Delete";
+}
+
+<main class="container" id="main">
+    <h1>Delete</h1>
+
+    <div class="alert alert-danger shadow">
+        <p>Are you sure you want to delete this instructor?</p>
+    </div>
+
+    <div>
+        <a href="/Instructor/All#main" class="btn btn-info mx-2 my-2">Cancel</a>
+        <a href="/Instructor/SaveDelete?id=@ViewData["id"]#main" class="btn btn-danger mx-2 my-2">Delete</a>
+    </div>
+</main>
+
+@section Style
+{
+    <style>
+        .alert-danger {
+            color: #721c24;
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+            border-radius: 0.25rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .shadow {
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+    </style>
+}
+
