@@ -61,7 +61,7 @@ namespace InstitueProject.Repository
             CourseIncludeOptions crsOption = CourseIncludeOptions.None,
             TraineeIncludeOptions traineeOption = TraineeIncludeOptions.None)
         {
-            IQueryable<Department> departments = context.Department;
+            IQueryable<Department> departments = context.Department.Where(d => d.Id==id);
 
             if (insOption == InstructorsIncludeOptions.None
                 && crsOption == CourseIncludeOptions.None
@@ -85,7 +85,7 @@ namespace InstitueProject.Repository
                 departments = departments.Include(d => d.Trainees);
             }
 
-            return departments.FirstOrDefault(d => d.Id == id);
+            return departments.FirstOrDefault();
 
         }
 

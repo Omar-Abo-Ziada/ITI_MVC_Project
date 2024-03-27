@@ -35,7 +35,6 @@ namespace InstitueProject
                 options.UseSqlServer(builder.Configuration.GetConnectionString("cs"));
             });
 
-
             // register the usermanager and signinmanager ... and registering the stores because the manager will ask for them 
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>(
                 options =>
@@ -57,6 +56,7 @@ namespace InstitueProject
             builder.Services.AddScoped<ITraineeRepository , TraineeRepository>();
 
             //****************************************************************************
+
             var app = builder.Build();
 
             #region built-in middleware

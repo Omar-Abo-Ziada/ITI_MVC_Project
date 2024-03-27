@@ -8,7 +8,7 @@ namespace InstitueProject.ViewModels
 
         public string Adress { get; set; }
 
-        public string Role { get; set; }
+        public string? Role { get; set; }
 
         [DataType(DataType.Password)]
         public string PassWord { get; set; }

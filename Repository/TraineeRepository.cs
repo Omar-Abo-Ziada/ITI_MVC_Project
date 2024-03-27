@@ -39,7 +39,7 @@ namespace InstitueProject.Repository
 
         public Trainee GetById(int id, DepartmentIncludeOptions depOption = DepartmentIncludeOptions.None)
         {
-            IQueryable<Trainee> trainees = context.Trainees;
+            IQueryable<Trainee> trainees = context.Trainees.Where(t => t.Id == id);
 
             if (depOption == DepartmentIncludeOptions.Include)
             {

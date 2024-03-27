@@ -3,8 +3,48 @@
   "WorkspaceRootPath": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7866A1BB-9E8F-4C8C-ACE9-1AFA4FD8E422}|InstitueProject.csproj|d:\\software_courses\\my_iti_44\\26-asp.net core (mvc)\\our mvc\\day2 project\\institueproject\\iti_mvc_project\\views\\course\\all.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7866A1BB-9E8F-4C8C-ACE9-1AFA4FD8E422}|InstitueProject.csproj|solutionrelative:views\\course\\all.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7866A1BB-9E8F-4C8C-ACE9-1AFA4FD8E422}|InstitueProject.csproj|d:\\software_courses\\my_iti_44\\26-asp.net core (mvc)\\our mvc\\day2 project\\institueproject\\iti_mvc_project\\viewmodels\\courseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7866A1BB-9E8F-4C8C-ACE9-1AFA4FD8E422}|InstitueProject.csproj|solutionrelative:viewmodels\\courseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7866A1BB-9E8F-4C8C-ACE9-1AFA4FD8E422}|InstitueProject.csproj|d:\\software_courses\\my_iti_44\\26-asp.net core (mvc)\\our mvc\\day2 project\\institueproject\\iti_mvc_project\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7866A1BB-9E8F-4C8C-ACE9-1AFA4FD8E422}|InstitueProject.csproj|solutionrelative:controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7866A1BB-9E8F-4C8C-ACE9-1AFA4FD8E422}|InstitueProject.csproj|d:\\software_courses\\my_iti_44\\26-asp.net core (mvc)\\our mvc\\day2 project\\institueproject\\iti_mvc_project\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7866A1BB-9E8F-4C8C-ACE9-1AFA4FD8E422}|InstitueProject.csproj|solutionrelative:models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7866A1BB-9E8F-4C8C-ACE9-1AFA4FD8E422}|InstitueProject.csproj|d:\\software_courses\\my_iti_44\\26-asp.net core (mvc)\\our mvc\\day2 project\\institueproject\\iti_mvc_project\\repository\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7866A1BB-9E8F-4C8C-ACE9-1AFA4FD8E422}|InstitueProject.csproj|solutionrelative:repository\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7866A1BB-9E8F-4C8C-ACE9-1AFA4FD8E422}|InstitueProject.csproj|d:\\software_courses\\my_iti_44\\26-asp.net core (mvc)\\our mvc\\day2 project\\institueproject\\iti_mvc_project\\repository\\traineerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7866A1BB-9E8F-4C8C-ACE9-1AFA4FD8E422}|InstitueProject.csproj|solutionrelative:repository\\traineerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7866A1BB-9E8F-4C8C-ACE9-1AFA4FD8E422}|InstitueProject.csproj|d:\\software_courses\\my_iti_44\\26-asp.net core (mvc)\\our mvc\\day2 project\\institueproject\\iti_mvc_project\\repository\\instructorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7866A1BB-9E8F-4C8C-ACE9-1AFA4FD8E422}|InstitueProject.csproj|solutionrelative:repository\\instructorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7866A1BB-9E8F-4C8C-ACE9-1AFA4FD8E422}|InstitueProject.csproj|d:\\software_courses\\my_iti_44\\26-asp.net core (mvc)\\our mvc\\day2 project\\institueproject\\iti_mvc_project\\repository\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7866A1BB-9E8F-4C8C-ACE9-1AFA4FD8E422}|InstitueProject.csproj|solutionrelative:repository\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7866A1BB-9E8F-4C8C-ACE9-1AFA4FD8E422}|InstitueProject.csproj|d:\\software_courses\\my_iti_44\\26-asp.net core (mvc)\\our mvc\\day2 project\\institueproject\\iti_mvc_project\\viewmodels\\registeruserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7866A1BB-9E8F-4C8C-ACE9-1AFA4FD8E422}|InstitueProject.csproj|solutionrelative:viewmodels\\registeruserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7866A1BB-9E8F-4C8C-ACE9-1AFA4FD8E422}|InstitueProject.csproj|d:\\software_courses\\my_iti_44\\26-asp.net core (mvc)\\our mvc\\day2 project\\institueproject\\iti_mvc_project\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7866A1BB-9E8F-4C8C-ACE9-1AFA4FD8E422}|InstitueProject.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7866A1BB-9E8F-4C8C-ACE9-1AFA4FD8E422}|InstitueProject.csproj|d:\\software_courses\\my_iti_44\\26-asp.net core (mvc)\\our mvc\\day2 project\\institueproject\\iti_mvc_project\\views\\account\\registerasadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7866A1BB-9E8F-4C8C-ACE9-1AFA4FD8E422}|InstitueProject.csproj|solutionrelative:views\\account\\registerasadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7866A1BB-9E8F-4C8C-ACE9-1AFA4FD8E422}|InstitueProject.csproj|d:\\software_courses\\my_iti_44\\26-asp.net core (mvc)\\our mvc\\day2 project\\institueproject\\iti_mvc_project\\repository\\iinstructorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7866A1BB-9E8F-4C8C-ACE9-1AFA4FD8E422}|InstitueProject.csproj|solutionrelative:repository\\iinstructorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +54,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "All.cshtml",
-              "DocumentMoniker": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\Views\\Course\\All.cshtml",
-              "RelativeDocumentMoniker": "Views\\Course\\All.cshtml",
-              "ToolTip": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\Views\\Course\\All.cshtml",
-              "RelativeToolTip": "Views\\Course\\All.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-26T23:21:01.108Z",
+              "DocumentIndex": 1,
+              "Title": "CourseController.cs",
+              "DocumentMoniker": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\Controllers\\CourseController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CourseController.cs",
+              "ToolTip": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\Controllers\\CourseController.cs",
+              "RelativeToolTip": "Controllers\\CourseController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAWwD0AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T17:46:44.99Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Course.cs",
+              "DocumentMoniker": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "Models\\Course.cs",
+              "ToolTip": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\Models\\Course.cs",
+              "RelativeToolTip": "Models\\Course.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T17:49:51.64Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CourseRepository.cs",
+              "DocumentMoniker": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\Repository\\CourseRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\CourseRepository.cs",
+              "ToolTip": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\Repository\\CourseRepository.cs",
+              "RelativeToolTip": "Repository\\CourseRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD8AAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T17:57:55.231Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IInstructorRepository.cs",
+              "DocumentMoniker": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\Repository\\IInstructorRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\IInstructorRepository.cs",
+              "ToolTip": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\Repository\\IInstructorRepository.cs",
+              "RelativeToolTip": "Repository\\IInstructorRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T17:57:28.046Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -40,6 +123,97 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CourseViewModel.cs",
+              "DocumentMoniker": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\ViewModels\\CourseViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\CourseViewModel.cs",
+              "ToolTip": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\ViewModels\\CourseViewModel.cs*",
+              "RelativeToolTip": "ViewModels\\CourseViewModel.cs*",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T19:01:55.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TraineeRepository.cs",
+              "DocumentMoniker": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\Repository\\TraineeRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\TraineeRepository.cs",
+              "ToolTip": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\Repository\\TraineeRepository.cs",
+              "RelativeToolTip": "Repository\\TraineeRepository.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAC4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T18:57:05.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "InstructorRepository.cs",
+              "DocumentMoniker": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\Repository\\InstructorRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\InstructorRepository.cs",
+              "ToolTip": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\Repository\\InstructorRepository.cs",
+              "RelativeToolTip": "Repository\\InstructorRepository.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAADIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T18:56:46.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DepartmentRepository.cs",
+              "DocumentMoniker": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\Repository\\DepartmentRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\DepartmentRepository.cs",
+              "ToolTip": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\Repository\\DepartmentRepository.cs",
+              "RelativeToolTip": "Repository\\DepartmentRepository.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAFgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T18:56:08.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RegisterUserViewModel.cs",
+              "DocumentMoniker": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\ViewModels\\RegisterUserViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\RegisterUserViewModel.cs",
+              "ToolTip": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\ViewModels\\RegisterUserViewModel.cs",
+              "RelativeToolTip": "ViewModels\\RegisterUserViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T18:46:54.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T18:33:38.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RegisterAsAdmin.cshtml",
+              "DocumentMoniker": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\Views\\Account\\RegisterAsAdmin.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\RegisterAsAdmin.cshtml",
+              "ToolTip": "D:\\Software_Courses\\My_ITI_44\\26-ASP.Net Core (MVC)\\our MVC\\Day2 Project\\InstitueProject\\ITI_MVC_Project\\Views\\Account\\RegisterAsAdmin.cshtml",
+              "RelativeToolTip": "Views\\Account\\RegisterAsAdmin.cshtml",
+              "ViewState": "AQIAABwAAAAAAAAAAAAqwCsAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-27T18:33:49.255Z",
+              "EditorCaption": ""
             }
           ]
         },

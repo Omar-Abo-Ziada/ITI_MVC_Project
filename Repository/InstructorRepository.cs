@@ -45,7 +45,7 @@ namespace InstitueProject.Repository
         public Instructor GetById(int id, DepartmentIncludeOptions depOption = DepartmentIncludeOptions.None
                                     , CourseIncludeOptions crsOption = CourseIncludeOptions.None)
         {
-            IQueryable<Instructor> instructors = context.Instructors;
+            IQueryable<Instructor> instructors = context.Instructors.Where(i => i.Id==id);
 
             if (depOption == DepartmentIncludeOptions.Include)
             {

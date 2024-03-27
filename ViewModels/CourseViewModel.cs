@@ -24,21 +24,17 @@ namespace InstitueProject.ViewModels
 
         public int Id { get; set; }
         
-        //[Required]
-       // [Unique]
+        [Unique]
         [MinLength(2, ErrorMessage = "must be longer than 2 letters")]
         [MaxLength(20, ErrorMessage = "must be less than 20 letters")]
         public string Name { get; set; }
 
-        [Required]
         [Hours]
         public int Hours { get; set; }
 
-        [Required]
         [Range(50, 100)]
         public int Degree { get; set; }
 
-        [Required]
         [Remote("CheckMinDegree", "Course"
             , ErrorMessage = "Min Degree must be less than the course Degree ", AdditionalFields = "Degree")]
         [Display(Name = "Minmum Degree")]

@@ -60,7 +60,10 @@ namespace InstitueProject.Repository
           DepartmentIncludeOptions departmentOption = DepartmentIncludeOptions.None,
           InstructorsIncludeOptions instructorsOption = InstructorsIncludeOptions.None)
         {
-            IQueryable<Course> courses = context.Courses;
+            /// TODO : test it on one controller and if success => apply it on the rest 
+            /// DONE : hhhhaha It Worked ... and Applied on the Rest :D
+           
+            IQueryable<Course> courses = context.Courses.Where(c => c.Id == id);  // I think this is better way because it doenst get all courses and include with them dep and ins but inly one crs .Where(c => c.Id == id);
 
             if (departmentOption == DepartmentIncludeOptions.Include)
             {
@@ -72,7 +75,7 @@ namespace InstitueProject.Repository
                 courses = courses.Include(c => c.Instructors).ThenInclude(i => i.Department);
             }
 
-            return courses.FirstOrDefault(c => c.Id == id);
+            return courses.FirstOrDefault();
         }
 
         #region question about IQurable

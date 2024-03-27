@@ -69,7 +69,6 @@ namespace InstitueProject.Controllers
             }
         }
 
-
         [HttpGet]
         public IActionResult Register()
         {
